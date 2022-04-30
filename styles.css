@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color:  rgb(43, 0, 0);
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: #3e3d3d82;
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.main-nav li{
+    padding: 0 2%;
+}
+
+.main-header{
+    background-color: rgba(0,0,0,0.1);
+    background-image: url("images/header.jpg");  
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+
+.band-name{
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+
+.band-name-large{
+    font-size: 4em;
+}
+
+.main-footer{
+    background-color: rgba(0,0,0,0.1);
+    padding: .25em 0 ;
+}
+
+.text-center {
+    text-align: center;
+  }
