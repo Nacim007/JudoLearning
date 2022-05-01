@@ -15,7 +15,7 @@ html,body{
     display: inline-block;
     padding: .5em;
     text-decoration: none;
-    color: aliceblue;
+    color: black;
 }
 
 .nav a:hover{
@@ -26,26 +26,26 @@ html,body{
     text-align: center;
     font-size: 1.1em;
     font-weight: bold;
-    color: aliceblue;
+    color: black;
 }
 
 .main-nav li{
     padding: 0 2%;
-    color: aliceblue;
+    color: black;
 }
 
 .main-header{
     background-image: url("images/header.jpg");  
     background-blend-mode: multiply;
     background-size: cover;
-    color: aliceblue;
+    color: black;
 }
 
 .band-name{
     text-align: center;
     margin: 0;
     font-size: 2.5em;
-    color: aliceblue;
+    color: black;
 }
 
 .band-name-large{
@@ -64,7 +64,9 @@ html,body{
 
 
 .main-footer{
-    background-color: #011c49;
+    background-image: url("images/header.jpg");  
+    background-blend-mode: multiply;
+    background-size: cover;
     color: aliceblue;
     padding: .25em 0 ;
     text-align: center;
