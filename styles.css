@@ -63,7 +63,22 @@ html,body{
     text-align: center;
   }
 
+.text-left {
+text-align: left;
+}
+
+.image-left{
+    float: left;
+    margin-right: 1em;
+}
+
 .button{
     background-color: #e7e7e7;
     color: black;
 }
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    }
