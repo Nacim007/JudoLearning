@@ -82,3 +82,13 @@ text-align: left;
     width: 60%;
     padding: 10px;
     }
+
+.div-left{
+    width: 40%;
+    float:left;
+}
+
+.div-right{
+    width: 40%;
+    float:right;
+}
