@@ -1,46 +1,164 @@
 html,body{
     margin: 0;
     padding: 0;
+    width: 100vw;
 }
 
-.nav ul {
-    margin: 0;
+/* --------------------------------------------------------------- */
+/* -------------------------- Page style ------------------------- */
+/* --------------------------------------------------------------- */ 
+
+.page-container{
+    position: relative;
+    min-height: 100vh;
 }
 
-.nav li{
-    display: inline;
+.content-wrap{
+    padding-bottom: 2.5rem;
 }
 
-.nav a{
-    display: inline-block;
-    padding: .5em;
-    text-decoration: none;
-    color: black;
+.row {
+    display: flex;
+    }
+    
+.column {
+flex: 33.33%;
+padding: 5px;
 }
 
-.nav a:hover{
-    background-color: #3e3d3d82;
-}
 
-.main-nav{
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: black;
-}
 
-.main-nav li{
-    padding: 0 2%;
-    color: black;
-}
-
+/* --------------------------------------------------------------- */
+/* --------------------- Header and navigation bar --------------- */
+/* --------------------------------------------------------------- */
 .main-header{
-    background-image: url("images/header.jpg");  
+    /* background-image: url("images/baniere.jpg");  
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #acaeb1;
     color: black;
 }
 
+nav{
+    width: 100vw;
+}
+
+/* No blank at the top of the page */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
+ li{
+    position: relative;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+ }
+
+
+/* Remove bullet points,underlines and color */
+a{
+    z-index: 1;
+    color: black;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 20px;
+    padding: 10px 10px;
+ }
+ 
+/*  We now need three pseudo-elements li:before, li:after and a:before 
+to create the three blue lines that highlight the hyperlink on hover*/
+li::before {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #f3eeee;
+    right: 0;
+    z-index: 0;
+    top: 33.33%;
+    transition: all 0.5s;
+ }
+
+li::after {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #f3eeee;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    transition: all 0.5s;
+ }
+
+a::before {
+    position: absolute;
+    content: "";
+    height: 33.33%;
+    width: 0;
+    background-color: #f3eeee;
+    bottom: 66.66%;
+    left: 0;
+    transition: all 0.5s;
+ }
+
+li:hover:before,
+li:hover::after,
+li:hover a::before{
+    width: 100%;
+ }
+
+/* --------------------------------------------------------------- */
+/* ------------------ List for Tachi Waza and Ne Waza  ----------- */
+/* --------------------------------------------------------------- */
+
+/* Yellow belt */
+.tw-button{
+    border-radius: 2px;
+    background-color: #eeff00;
+    color: rgba(0,0,0,.87);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+.nw-button{
+    border-radius: 2px;
+    background-color: #eeff00;
+    color: rgba(0,0,0,.87);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+/* TODO: do the same for all belts */
+
+
+/* --------------------------------------------------------------- */
+/* -------------------------- Footer ----------------------------- */
+/* --------------------------------------------------------------- */
+
+.footer{
+    /* background-image: url("images/header.jpg");  
+    background-blend-mode: multiply;
+    background-size: cover; */
+    background-color: #acaeb1;
+    color: black;
+    padding: .25em 0 ;
+    text-align: center;
+    position: absolute;
+    width: 100vw;
+}
+
+
+/* --------------------------------------------------------------- */
+/* -------------------------- Useful function -------------------- */
+/* --------------------------------------------------------------- */  
 .band-name{
     text-align: center;
     margin: 0;
@@ -52,57 +170,26 @@ html,body{
     font-size: 4.5em;
 }
 
-
-.page-container{
-    position: relative;
-    min-height: 100vh;
-}
-
-.content-wrap{
-    padding-bottom: 2.5rem;
-}
-
-
-.main-footer{
-    background-image: url("images/header.jpg");  
-    background-blend-mode: multiply;
-    background-size: cover;
-    color: aliceblue;
-    padding: .25em 0 ;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-}
-
-.button{
-    background-color: #011c49;
-    color: black;
-}
-
+/* Disable a button */
 .disabled {
     opacity: 0.6;
     cursor: not-allowed;
   }
 
-.row {
-    display: flex;
-    }
-    
-.column {
-flex: 33.33%;
-padding: 5px;
-}
 
 .text-center {
-    text-align: center;
-  }
+text-align: center;
+}
 
 .text-left {
 text-align: left;
 }
 
 .video{
-    position: relative;
     width: 100%;
     height:auto;
+}
+
+.tech-list{
+
 }
