@@ -54,30 +54,21 @@ html,body{
 
 .main-footer{
     background-color: #011c49;
+    color: aliceblue;
     padding: .25em 0 ;
     text-align: center;
-    color: aliceblue;
-    bottom:0;
-}
-
-.text-center {
-    text-align: center;
-  }
-
-.text-left {
-text-align: left;
+    width: 100%;
 }
 
 .button{
-    background-color: #e7e7e7;
+    background-color: #011c49;
     color: black;
 }
 
-.center {
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-    }
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 
 .row {
     display: flex;
@@ -86,4 +77,12 @@ text-align: left;
 .column {
 flex: 33.33%;
 padding: 5px;
+}
+
+.text-center {
+    text-align: center;
+  }
+
+.text-left {
+text-align: left;
 }
