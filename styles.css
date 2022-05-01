@@ -104,6 +104,6 @@ text-align: left;
 .video{
     display: block;
     margin: 1em auto;
-    width: 1%;
-    height:calc(0.5625*1vw);
+    width: 5%;
+    height:calc(0.5625*5vw);
 }
