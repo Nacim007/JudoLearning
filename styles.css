@@ -269,40 +269,12 @@ transform: scale(1);
 .slide__text {
 font-size: 40px;
 font-weight: bold;
-font-family: sans-serif;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .slide a {
 background: none;
 border: none;
-}
-
-a.slide__prev,
-.slider::before {
-transform: rotate(135deg);
--webkit-transform: rotate(135deg);
-left: 5%;
-}
-
-a.slide__next,
-.slider::after {
-transform: rotate(-45deg);
--webkit-transform: rotate(-45deg);
-right: 5%;
-}
-
-.slider::before,
-.slider::after,
-.slide__prev,
-.slide__next {
-position: absolute;
-top: 48%;
-width: 35px;
-height: 35px;
-border: solid black;
-border-width: 0 4px 4px 0;
-padding: 3px;
-box-sizing: border-box;
 }
 
 .slider::before,
