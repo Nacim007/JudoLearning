@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
-        <header class="main-header"> 
+    <body class="main-header">
+        <header> 
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
@@ -14,34 +14,41 @@
                     <li><a href="Vocabulaire.html" >Vocabulaire</a></li>
                 </ul>
             </nav>
-            <hr>
             <h1 class="band-name band-name-large ">Accueil</h1>
             <!-- TODO: Find a suitable backgorund-->
         </header>
-        <section class="text-center page-container">
-            <h2>Historique du Judo</h2>
-            <p>TODO: Ajouter le texte sur l'histoire du Judo</p>
-            <hr>
-            <div>
-                <div>
-                    <button class="disabled" type="button">Kimono</button>
-                    <p>TODO: Ajouter le texte sur le kimono</p>
-                    <hr>
-                    <button class="disabled" type="button"> Dojo </button>
-                    <p>TODO: Ajouter le texte sur le dojo</p>
-                    <hr>
-                    <button class="disabled" type="button"> Tatami </button>
-                    <p>TODO: Ajouter le texte sur le Tatami</p>
-                </div>
-            </div>
-        </section>
 
-        <footer class="footer">
-            <br>
-            <form>
-                <input type = "button" value = "Retour"  onclick = "history.go(-1)">
-            </form>
-            <br> 
-        </footer>
+        <div class="slider-container">
+            <div class="slider">
+              <div class="slides">
+                <div id="slides__1" class="slide">
+                  <span class="slide__text">Historique du Judo</span>
+                  <a class="slide__prev" href="#slides__4" title="Next"></a>
+                  <a class="slide__next" href="#slides__2" title="Next"></a>
+                </div>
+                <div id="slides__2" class="slide">
+                  <span class="slide__text">Le Kimono</span>
+                  <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                  <a class="slide__next" href="#slides__3" title="Next"></a>
+                </div>
+                <div id="slides__3" class="slide">
+                  <span class="slide__text">Le Dojo</span>
+                  <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                  <a class="slide__next" href="#slides__4" title="Next"></a>
+                </div>
+                <div id="slides__4" class="slide">
+                  <span class="slide__text">Le Salut</span>
+                  <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                  <a class="slide__next" href="#slides__1" title="Prev"></a>
+                </div>
+              </div>
+              <div class="slider__nav">
+                <a class="slider__navlink" href="#slides__1"></a>
+                <a class="slider__navlink" href="#slides__2"></a>
+                <a class="slider__navlink" href="#slides__3"></a>
+                <a class="slider__navlink" href="#slides__4"></a>
+              </div>
+            </div>
+          </div>
     </body>
 </html>  

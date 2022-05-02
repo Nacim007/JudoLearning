@@ -1,6 +1,6 @@
 html,body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     width: 100vw;
 }
 
@@ -11,6 +11,7 @@ html,body{
 .page-container{
     position: relative;
     min-height: 100vh;
+    height: auto;
 }
 
 .content-wrap{
@@ -22,8 +23,8 @@ html,body{
     }
     
 .column {
-flex: 33.33%;
-padding: 5px;
+flex: 50%;
+padding: 0;
 }
 
 
@@ -35,7 +36,12 @@ padding: 5px;
     /* background-image: url("images/baniere.jpg");  
     background-blend-mode: multiply;
     background-size: cover; */
-    background-color: #acaeb1;
+    /* background-color: #acaeb1; */
+    background: linear-gradient(
+    149deg,
+    #304352 0%,
+    #d7d2cc 100%
+);
     color: black;
 }
 
@@ -79,7 +85,7 @@ li::before {
     position: absolute;
     height: 33.33%;
     width: 0;
-    background-color: #f3eeee;
+    background-color: #8e9eab;
     right: 0;
     z-index: 0;
     top: 33.33%;
@@ -91,7 +97,7 @@ li::after {
     position: absolute;
     height: 33.33%;
     width: 0;
-    background-color: #f3eeee;
+    background-color: #8e9eab;
     left: 0;
     z-index: 0;
     bottom: 0;
@@ -103,7 +109,7 @@ a::before {
     content: "";
     height: 33.33%;
     width: 0;
-    background-color: #f3eeee;
+    background-color: #8e9eab;
     bottom: 66.66%;
     left: 0;
     transition: all 0.5s;
@@ -116,11 +122,10 @@ li:hover a::before{
  }
 
 /* --------------------------------------------------------------- */
-/* ------------------ List for Tachi Waza and Ne Waza  ----------- */
+/* ------------------ Button for each belt  ----------- */
 /* --------------------------------------------------------------- */
 
-/* Yellow belt */
-.tw-button{
+.y-button{
     border-radius: 2px;
     background-color: #eeff00;
     color: rgba(0,0,0,.87);
@@ -128,15 +133,29 @@ li:hover a::before{
     box-shadow: 0 1px 3px rgba(0,0,0,.4);
 }
 
-.nw-button{
+.g-button{
     border-radius: 2px;
-    background-color: #eeff00;
+    background-color: green;
     color: rgba(0,0,0,.87);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
     box-shadow: 0 1px 3px rgba(0,0,0,.4);
 }
 
-/* TODO: do the same for all belts */
+.b-button{
+    border-radius: 2px;
+    background-color: blue;
+    color: rgba(0,0,0,.87);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+.br-button{
+    border-radius: 2px;
+    background-color: brown;
+    color: rgba(0,0,0,.87);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
 
 
 /* --------------------------------------------------------------- */
@@ -190,6 +209,126 @@ text-align: left;
     height:auto;
 }
 
-.tech-list{
 
+
+/* --------------------------------------------------------------- */
+/* ------------------ Card slider  ------------------------------- */
+/* --------------------------------------------------------------- */
+
+.slider-container {
+    background: linear-gradient(
+        149deg,
+        #8e9eab 0%,
+        #eef2f3 100%
+    );
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
 }
+  
+.slider {
+width: 100%;
+max-width: 600px;
+height: 400px;
+margin: 20px;
+text-align: center;
+border-radius: 20px;
+overflow: hidden;
+position: relative;
+}
+  
+.slides {
+display: flex;
+overflow-x: scroll;
+position: relative;
+scroll-behavior: smooth;
+scroll-snap-type: x mandatory;
+}
+
+.slide:nth-of-type(even) {
+background-color:#8e9eab 0%,
+;
+}
+
+.slide {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+width: 100%;
+height: 400px;
+scroll-snap-align: center;
+margin-right: 0px;
+box-sizing: border-box;
+background: white;
+transform-origin: center center;
+transform: scale(1);
+}
+
+.slide__text {
+font-size: 40px;
+font-weight: bold;
+font-family: sans-serif;
+}
+
+.slide a {
+background: none;
+border: none;
+}
+
+a.slide__prev,
+.slider::before {
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+left: 5%;
+}
+
+a.slide__next,
+.slider::after {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+right: 5%;
+}
+
+.slider::before,
+.slider::after,
+.slide__prev,
+.slide__next {
+position: absolute;
+top: 48%;
+width: 35px;
+height: 35px;
+border: solid black;
+border-width: 0 4px 4px 0;
+padding: 3px;
+box-sizing: border-box;
+}
+
+.slider::before,
+.slider::after {
+content: "";
+z-index: 1;
+background: none;
+pointer-events: none;
+}
+
+.slider__nav {
+box-sizing: border-box;
+position: absolute;
+bottom: 5%;
+left: 50%;
+width: 200px;
+margin-left: -100px;
+text-align: center;
+}
+
+.slider__navlink {
+display: inline-block;
+height: 5px;
+width: 5px;
+border-radius: 50%;
+background-color: black;
+margin: 0 5px 0 5px;
+}
+  
