@@ -1,6 +1,6 @@
 html,body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     width: 100vw;
 }
 
@@ -15,11 +15,12 @@ html,body{
 }
 
 .content-wrap{
-    padding-bottom: 2.5rem;
+    padding-bottom: 20px;
+    padding-left: 0;
 }
 
 .row {
-    display: flex;
+    display: flex; 
     }
     
 .column {
@@ -27,6 +28,9 @@ flex: 50%;
 padding: 0;
 }
 
+.content-box {
+    columns: 2 auto;
+  }
 
 
 /* --------------------------------------------------------------- */
@@ -122,7 +126,7 @@ li:hover a::before{
  }
 
 /* --------------------------------------------------------------- */
-/* ------------------ Button for each belt  ----------- */
+/* ------------------ Rectangle for each belt  ------------------- */
 /* --------------------------------------------------------------- */
 
 .y-button{
@@ -205,10 +209,10 @@ text-align: left;
 }
 
 .video{
-    width: 100%;
+    width: 80%;
     height:auto;
+    margin: 0;
 }
-
 
 
 /* --------------------------------------------------------------- */
@@ -261,15 +265,20 @@ height: 400px;
 scroll-snap-align: center;
 margin-right: 0px;
 box-sizing: border-box;
-background: white;
 transform-origin: center center;
 transform: scale(1);
+background: linear-gradient(
+    149deg,
+    #eef2f3 0%,
+    #8e9eab 100%
+)
 }
 
 .slide__text {
 font-size: 40px;
 font-weight: bold;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
 }
 
 .slide a {
@@ -295,12 +304,58 @@ margin-left: -100px;
 text-align: center;
 }
 
-.slider__navlink {
+.slider__navlinkJaune {
 display: inline-block;
 height: 5px;
 width: 5px;
 border-radius: 50%;
-background-color: black;
+background-color: #eeff00;
 margin: 0 5px 0 5px;
 }
+
+.slider__navlinkVert {
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: green;
+    margin: 0 5px 0 5px;
+    }
   
+.slider__navlinkBleu {
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: blue;
+    margin: 0 5px 0 5px;
+    }
+
+.slider__navlinkMarron {
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: brown;
+    margin: 0 5px 0 5px;
+    }
+
+
+
+
+/* --------------------------------------------------------------- */
+/* ------------------------ Table  ------------------------------- */
+/* --------------------------------------------------------------- */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: coral;}
