@@ -16,15 +16,14 @@ body
     background-size: cover;
     margin: 0 ;
     padding: 0;
-
 }
 
-.logo{
+/* .logo{
 	width: 125px;
 	height: 125px;
     cursor: pointer;
     margin-right: auto;
-}
+} */
 
 header{
     background: linear-gradient(
@@ -32,23 +31,23 @@ header{
     #304352 0%,
     #d7d2cc 100%);
     display:flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 li{
-    position: relative;
-    padding: 0px 20px;
     height: 100%;
     display: flex;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
-    display: inline-block;
 }
-
 
 .nav__links{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
 }  
 
 .nav__links li{
@@ -65,16 +64,12 @@ li{
 }
 
 button{
-    padding: 9px 25px;
+    padding: 10px 10px;
     background-color: rgba(0,136,169,1);
     border:none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-}
-
-button:hover{
-    background-color: rgba(0,136,169,0.8);
 }
 
 a{  
