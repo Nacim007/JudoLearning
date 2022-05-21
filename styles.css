@@ -1,7 +1,7 @@
 html,body{
-    margin: 0;
+    margin: 0 ;
     padding: 0;
-    width: 100vw;
+    width: 100vw; 
 }
 
 /* --------------------------------------------------------------- */
@@ -32,21 +32,20 @@ padding: 0;
     columns: 2 auto;
   }
 
-
+  
 /* --------------------------------------------------------------- */
 /* --------------------- Header and navigation bar --------------- */
 /* --------------------------------------------------------------- */
 .main-header{
     /* background-image: url("images/baniere.jpg");  
-    background-blend-mode: multiply;
     background-size: cover; */
     /* background-color: #acaeb1; */
     background: linear-gradient(
-    149deg,
+    90deg,
     #304352 0%,
     #d7d2cc 100%
 );
-    color: black;
+    background-blend-mode: multiply;
 }
 
 nav{
@@ -59,14 +58,14 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: row;
     justify-content: space-around;
  }
 
  li{
     position: relative;
-    padding: 0 20px;
+    padding: 0 0px;
     height: 100%;
     display: flex;
  }
@@ -130,7 +129,7 @@ li:hover a::before{
 /* --------------------------------------------------------------- */
 
 .y-button{
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: #eeff00;
     color: rgba(0,0,0,.87);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
@@ -139,7 +138,7 @@ li:hover a::before{
 }
 
 .g-button{
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: green;
     color: rgba(0,0,0,.87);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
@@ -148,7 +147,7 @@ li:hover a::before{
 }
 
 .b-button{
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: blue;
     color: rgba(0,0,0,.87);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
@@ -157,7 +156,7 @@ li:hover a::before{
 }
 
 .br-button{
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: brown;
     color: rgba(0,0,0,.87);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
@@ -225,10 +224,10 @@ text-align: left;
 
 .slider-container {
     background: linear-gradient(
-        149deg,
-        #8e9eab 0%,
-        #eef2f3 100%
-    );
+    90deg,
+    #304352 0%,
+    #d7d2cc 100%
+);
     display: flex;
     /* align-items: center;   */
     justify-content: center;
@@ -236,13 +235,13 @@ text-align: left;
 }
   
 .slider {
-width: 100%;
+width: 50%;
 /* max-width: 600px; */
 /* height: 400px; */
 height: 70%;
 margin: 20px;
 text-align: center;
-border-radius: 20px;
+border-radius: 50px;
 overflow: hidden;
 position: absolute;
 }
@@ -255,10 +254,10 @@ scroll-behavior: smooth;
 scroll-snap-type: x mandatory;
 }
 
-.slide:nth-of-type(even) {
+/* .slide:nth-of-type(even) {
 background-color:#8e9eab 0%,
 ;
-}
+} */
 
 .slide {
 display: flex;
@@ -273,24 +272,24 @@ box-sizing: border-box;
 transform-origin: center center;
 transform: scale(1);
 background: linear-gradient(
-    149deg,
-    #eef2f3 0%,
-    #8e9eab 100%
-)
+    90deg,
+    #d7d2cc 0%,
+    #304352 100%
+);
 }
 
 .slide__text {
 font-size: 40px;
 font-weight: bold;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-/* display: inline-block; */
+display: inline-block;
 position: fixed;
 }
 
-.slide a {
+/* .slide a {
 background: none;
 border: none;
-}
+} */
 
 .slider::before,
 .slider::after {
@@ -348,18 +347,17 @@ margin: 0 5px 0 5px;
 
 
 
-
 /* --------------------------------------------------------------- */
 /* ------------------------ Table  ------------------------------- */
 /* --------------------------------------------------------------- */
 
 table {
-    /*border-collapse: collapse;*/
-    margin: 25px 0;
-    font-size: 0.8em;
+    /* border-collapse: collapse; */
+    font-size: 1.2em;
     min-width: 400px;
-    width: 100%;
+    width: 100vw;
     background-color: #050505;
+    margin: 0;
     }
 
 td:hover {background-color: coral;}
