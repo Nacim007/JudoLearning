@@ -230,7 +230,7 @@ text-align: left;
         #eef2f3 100%
     );
     display: flex;
-    align-items: center;  
+    /* align-items: center;   */
     justify-content: center;
     height: 100%;
 }
@@ -332,7 +332,7 @@ margin: 0 5px 0 5px;
     height: 5px;
     width: 5px;
     border-radius: 50%;
-    background-color: blue;
+    background-color: rgb(27, 79, 248);
     margin: 0 5px 0 5px;
     }
 
@@ -341,7 +341,7 @@ margin: 0 5px 0 5px;
     height: 5px;
     width: 5px;
     border-radius: 50%;
-    background-color: brown;
+    background-color: rgb(113, 43, 31);
     margin: 0 5px 0 5px;
     }
 
