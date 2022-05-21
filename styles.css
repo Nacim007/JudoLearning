@@ -190,7 +190,7 @@ li:hover a::before{
 }
 
 .band-name-large{
-    font-size: 4.5em;
+    font-size: 2.5em;
 }
 
 /* Disable a button */
@@ -279,6 +279,7 @@ font-size: 40px;
 font-weight: bold;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 text-align: center;
+display: inline-block;
 }
 
 .slide a {
@@ -403,6 +404,18 @@ td:hover {background-color: coral;}
 
 .degagement{
     background-color: #008b25;
+    padding: 5px;
+    text-align: center;
+}
+
+.Kansetstu{
+    background-color: #4dccf2;
+    padding: 5px;
+    text-align: center;
+}
+
+.shime{
+    background-color: #16ad2f;
     padding: 5px;
     text-align: center;
 }
