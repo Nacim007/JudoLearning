@@ -237,8 +237,9 @@ text-align: left;
   
 .slider {
 width: 100%;
-max-width: 600px;
-height: 400px;
+/* max-width: 600px; */
+/* height: 400px; */
+height: 70%;
 margin: 20px;
 text-align: center;
 border-radius: 20px;
