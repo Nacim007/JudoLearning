@@ -348,14 +348,61 @@ margin: 0 5px 0 5px;
 /* --------------------------------------------------------------- */
 
 table {
-    border-collapse: collapse;
+    /*border-collapse: collapse;*/
+    margin: 25px 0;
+    font-size: 0.8em;
+    min-width: 400px;
     width: 100%;
+    background-color: #050505;
     }
+
+td:hover {background-color: coral;}
     
-th, td {
-padding: 8px;
-text-align: left;
-border-bottom: 1px solid #ddd;
+.titre {
+    background-color: #fdfdfd;
+    padding: 8px;
+    text-align: center;
+    /* border-bottom: 1px solid #ddd; */
 }
 
-tr:hover {background-color: coral;}
+.separation{
+    background-color: #f40808;
+    padding: 8px;
+    text-align: center;
+}
+
+.fond{
+    background-color: #ffff04;
+    padding: 5px;
+    text-align: center;
+}
+
+.nope{
+    background-color: #ffffff;
+    padding: 5px;
+    text-align: center;
+}
+
+.tachiwaza{
+    background-color: #2888e8;
+    padding: 5px;
+    text-align: center;
+}
+
+.ukemi{
+    background-color: #047316;
+    padding: 5px;
+    text-align: center;
+}
+
+.oseikomi{
+    background-color: #c26610;
+    padding: 5px;
+    text-align: center;
+}
+
+.degagement{
+    background-color: #008b25;
+    padding: 5px;
+    text-align: center;
+}
