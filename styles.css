@@ -30,7 +30,7 @@ header{
     90deg,
     #304352 0%,
     #d7d2cc 100%);
-    display:flex;
+    display: inline-block;
     justify-content: space-between;
     align-items: center; 
 }
@@ -44,14 +44,13 @@ li{
 
 .nav__links{
     list-style: none;
-    display: flex;
     justify-content: space-between;
-    text-align: center;
-    position: relative;
 }  
 
 .nav__links li{
     display: inline-block;
+    text-align: center;
+    margin-left: auto;
     padding: 0px 10px;
 }  
 
@@ -257,9 +256,9 @@ text-align: left;
 .slider {
 width: 60%;
 height: 400px;
-margin: 60px;
+margin: 40px;
 text-align: center;
-border-radius: 40px;
+border-radius: 20px;
 overflow: hidden;
 position: absolute;
 }
