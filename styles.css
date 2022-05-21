@@ -1,78 +1,84 @@
-html,body{
+html{
     margin: 0 ;
     padding: 0;
-    width: 100vw; 
 }
-
-/* --------------------------------------------------------------- */
-/* -------------------------- Page style ------------------------- */
-/* --------------------------------------------------------------- */ 
-
-.page-container{
-    position: relative;
-    min-height: 100vh;
-    height: auto;
-}
-
-.content-wrap{
-    padding-bottom: 20px;
-    padding-left: 0;
-}
-
-.row {
-    display: flex; 
-    }
-    
-.column {
-flex: 50%;
-padding: 0;
-}
-
-.content-box {
-    columns: 2 auto;
-  }
 
   
 /* --------------------------------------------------------------- */
 /* --------------------- Header and navigation bar --------------- */
 /* --------------------------------------------------------------- */
-.main-header{
-    /* background-image: url("images/baniere.jpg");  
-    background-size: cover; */
-    /* background-color: #acaeb1; */
+body
+{
+    background: linear-gradient(
+        90deg,
+        #304352 0%,
+        #d7d2cc 100%);
+    background-size: cover;
+    margin: 0 ;
+    padding: 0;
+
+}
+
+.logo{
+	width: 125px;
+	height: 125px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+header{
     background: linear-gradient(
     90deg,
     #304352 0%,
-    #d7d2cc 100%
-);
-    background-blend-mode: multiply;
+    #d7d2cc 100%);
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-nav{
-    width: 100vw;
-}
-
-/* No blank at the top of the page */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    /* align-items: center; */
-    flex-direction: row;
-    justify-content: space-around;
- }
-
- li{
+li{
     position: relative;
-    padding: 0 0px;
+    padding: 0px 20px;
     height: 100%;
     display: flex;
- }
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
 
 
-/* Remove bullet points,underlines and color */
-a{
+.nav__links{
+    list-style: none;
+}  
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 10px;
+}  
+
+.nav__links li a{
+    transition:all 0.3s ease 0s;
+}
+
+.nav__links li a:hower{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+a{  
+    /* Remove bullet points,underlines and color */
     z-index: 1;
     color: black;
     text-decoration: none;
@@ -81,9 +87,21 @@ a{
     padding: 10px 10px;
  }
  
-/*  We now need three pseudo-elements li:before, li:after and a:before 
+/* nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+ } */
+
+
+ /* We now need three pseudo-elements li:before, li:after and a:before 
 to create the three blue lines that highlight the hyperlink on hover*/
-li::before {
+/* li::before { 
     content: "";
     position: absolute;
     height: 33.33%;
@@ -122,19 +140,18 @@ li:hover:before,
 li:hover::after,
 li:hover a::before{
     width: 100%;
- }
+ } */
 
 /* --------------------------------------------------------------- */
-/* ------------------ Rectangle for each belt  ------------------- */
+/* ------------------ Button for each belt  ------------------- */
 /* --------------------------------------------------------------- */
-
 .y-button{
     border-radius: 10px;
     background-color: #eeff00;
-    color: rgba(0,0,0,.87);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
     box-shadow: 0 1px 3px rgba(0,0,0,.4);
-    position: center;
+    text-align: center;
+    display: inline-block;
 }
 
 .g-button{
@@ -143,7 +160,8 @@ li:hover a::before{
     color: rgba(0,0,0,.87);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
     box-shadow: 0 1px 3px rgba(0,0,0,.4);
-    position: center;
+    text-align: center;
+    display: inline-block;
 }
 
 .b-button{
@@ -152,7 +170,8 @@ li:hover a::before{
     color: rgba(0,0,0,.87);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
     box-shadow: 0 1px 3px rgba(0,0,0,.4);
-    position: center;
+    text-align: center;
+    display: inline-block;
 }
 
 .br-button{
@@ -161,7 +180,8 @@ li:hover a::before{
     color: rgba(0,0,0,.87);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
     box-shadow: 0 1px 3px rgba(0,0,0,.4);
-    position: center;
+    text-align: center;
+    display: inline-block;
 }
 
 
@@ -192,16 +212,21 @@ li:hover a::before{
     color: black;
 }
 
-.band-name-large{
-    font-size: 2.5em;
+.band-name-small{
+    font-size: 1em;
 }
+
+.band-name-left{
+    font-size: 2.5em;
+    margin-left: auto;
+}
+
 
 /* Disable a button */
 .disabled {
     opacity: 0.6;
     cursor: not-allowed;
   }
-
 
 .text-center {
 text-align: center;
@@ -235,13 +260,11 @@ text-align: left;
 }
   
 .slider {
-width: 50%;
-/* max-width: 600px; */
-/* height: 400px; */
-height: 70%;
-margin: 20px;
+width: 60%;
+height: 400px;
+margin: 60px;
 text-align: center;
-border-radius: 50px;
+border-radius: 40px;
 overflow: hidden;
 position: absolute;
 }
@@ -254,10 +277,10 @@ scroll-behavior: smooth;
 scroll-snap-type: x mandatory;
 }
 
-/* .slide:nth-of-type(even) {
+.slide:nth-of-type(even) {
 background-color:#8e9eab 0%,
 ;
-} */
+}
 
 .slide {
 display: flex;
@@ -286,10 +309,10 @@ display: inline-block;
 position: fixed;
 }
 
-/* .slide a {
+.slide a {
 background: none;
 border: none;
-} */
+}
 
 .slider::before,
 .slider::after {
@@ -346,16 +369,13 @@ margin: 0 5px 0 5px;
     }
 
 
-
 /* --------------------------------------------------------------- */
 /* ------------------------ Table  ------------------------------- */
 /* --------------------------------------------------------------- */
 
 table {
     /* border-collapse: collapse; */
-    font-size: 1.2em;
-    min-width: 400px;
-    width: 100vw;
+    font-size: 1em;
     background-color: #050505;
     margin: 0;
     }
@@ -366,7 +386,6 @@ td:hover {background-color: coral;}
     background-color: #fdfdfd;
     padding: 8px;
     text-align: center;
-    /* border-bottom: 1px solid #ddd; */
 }
 
 .separation{
