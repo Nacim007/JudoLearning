@@ -1,3 +1,6 @@
+
+// Search for a specifi word in a table
+// ------------------------------------
 function search_tech() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
