@@ -506,3 +506,10 @@ table {
 } 
 
 
+/* ------------------------------------ */
+.table-wrapper
+{
+    height: 65vh;
+    overflow: auto;
+}
+
