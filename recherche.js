@@ -1,5 +1,5 @@
 
-// Search for a specifi word in a table
+// Search for a specifi word in a table:
 // ------------------------------------
 function search_tech() {
   // Declare variables
