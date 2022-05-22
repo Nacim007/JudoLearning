@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="body">
+      <header>
+          <!-- <img src="C:/Users/nacim/OneDrive/Desktop/judoLogo.png" alt="logo" class="logo"> -->
+          <nav>
+              <ul class="nav__links">
+                  <!-- <li><a href="index.html">Accueil</a></li> -->
+                  <li><a href="PassageGrade.html">Grades</a></li>
+                  <li><a href="Vocabulaire.html">Tableau</a></li>
+              </ul>
+          </nav>
+          <!-- <a class="cta" href="#"><button>Contact</button></a> -->
+        </header>
+        <hr>
+        <h1 class="band-name">Tableau Général</h1>
+        <hr>
+        <!-- TODO: Find a suitable backgorund-->
+        <!-- linking javascript -->
+        <script src="./recherche.js"></script>
+        <!-- input tag -->
+        <input id="myInput" onkeyup="search_tech()" type="text"
+        name="search" placeholder="Recherche...">
+        <!---->
+        <table id="myTable" class="center">
+            <thead class="headtitle">
+            <tr>
+                <th></th>
+                <th>Jaune</th>
+                <th>Orange</th>
+                <th>Verte</th>
+                <th>Bleue</th>
+                <th>Marron</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr bgcolor="#f40808">
+                <th>Tachi waza</th>
+                <th></th><th></th><th></th>
+                <th></th><th></th>
+            </tr>
+            <tr>
+                <td class="tachiwaza">O-soto-gari</td>
+                    <td class="fond">Fond</td>
+                    <td class="fond">Fond + 1</td>
+                    <td class="fond">Fond + 2</td>
+                    <td class="fond">Fond + 2 </td>
+                    <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="tachiwaza">Uki-goshi</td>
+                    <td class="fond">Fond</td>
+                    <td class="fond">Fond + 1</td>
+                    <td class="fond">Fond + 2</td>
+                    <td class="fond">Fond + 2</td>
+                    <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="tachiwaza">Hiza-guruma</td>
+                    <td class="fond">Fond</td>
+                    <td class="fond">Fond + 1</td>
+                    <td class="fond">Fond + 2</td>
+                    <td class="fond">Fond + 2</td>
+                    <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="tachiwaza">Sasae-tsuri-komi-ashi</td>
+                    <td class="fond">Fond</td>
+                    <td class="fond">Fond + 1</td>
+                    <td class="fond">Fond + 2</td>
+                    <td class="fond">Fond + 2</td>
+                    <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="tachiwaza">Seoi-nage</td>
+                    <td class="fond">Fond</td>
+                    <td class="fond">Fond</td>
+                    <td class="fond">Fond + 2</td>
+                    <td class="fond">Fond + 2</td>
+                    <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="tachiwaza">O-uchi-gari</td>
+                    <td class="nope"></td>
+                    <td class="fond">Fond</td>
+                    <td class="fond">Fond + 2</td>
+                    <td class="fond">Fond + 2</td>
+                    <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="tachiwaza">O-goshi</td>
+                    <td class="nope"></td>
+                    <td class="fond">Fond</td>
+                    <td class="fond">Fond + 1</td>
+                    <td class="fond">Fond + 1</td>
+                    <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="tachiwaza">De-ashi-barai</td>
+                    <td class="nope"></td>
+                    <td class="fond">Fond</td>
+                    <td class="fond">Fond + 1</td>
+                    <td class="fond">Fond + 1</td>
+                    <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="tachiwaza">Koshi-guruma</td>
+                    <td class="nope"></td>
+                    <td class="nope"></td>
+                    <td class="fond">Fond</td>
+                    <td class="fond">Fond + 1</td>
+                    <td class="fond">Fond + 3</td>
+            </tr>    
+            <tr>
+                <td class="tachiwaza">Harai-goshi</td>
+                    <td class="nope"></td>
+                    <td class="nope"></td>
+                    <td class="fond">Fond</td>
+                    <td class="fond">Fond + 1</td>
+                    <td class="fond">Fond + 3</td>
+                </tr>
+            <tr>
+            <td class="tachiwaza">Ko-soto-gari</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+                <td class="fond">Fond + 1</td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+            <td class="tachiwaza">Ko-uchi-gari</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+                <td class="fond">Fond + 1</td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+            <td class="tachiwaza">Tai-otoshi</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+                <td class="fond">Fond + 1</td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+            <td class="tachiwaza">Uchi-mata</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+                <td class="fond">Fond + 1</td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+            <td class="tachiwaza">Tsuri-komi-goshi</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 1</td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+            <td class="tachiwaza">Tomoe-nage</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+            <td class="tachiwaza">Okuri-ashi-barai</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+            <td class="nope">Uchi komi</td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+            </tr>
+            <tr bgcolor="#f40808">
+            <th>Ukemi</th>
+                <th></th><th></th><th></th>
+                <th></th><th></th>
+            </tr>
+            <tr>
+            <td class="ukemi"> Ushiro Ukemi </td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+            </tr>
+            <tr>
+            <td class="ukemi"> Yoko Ukemi </td>
+                <td class="fond">G&D</td>
+                <td class="fond">G&D</td>
+                <td class="fond">G&D</td>
+                <td class="fond">G&D</td>
+                <td class="fond">G&D</td>
+            </tr>
+            <tr>
+            <td class="ukemi"> Mae Ukemi </td>
+                <td class="fond">G&D</td>
+                <td class="fond">G&D</td>
+                <td class="fond">G&D</td>
+                <td class="fond">G&D</td>
+                <td class="fond">G&D</td>
+            </tr>
+            <tr bgcolor="#f40808">
+            <th>Osei-komi-waza</th>
+                <th></th><th></th><th></th>
+                <th></th><th></th>
+            </tr>
+            <tr>
+            <td class="oseikomi">Gesa-gatame</td>
+                <td class="fond">Fond + entrée</td>
+                <td class="fond">Fond + 2</td>
+                <td class="fond">Fond + 3</td>
+                <td class="fond">Fond + 4</td>
+                <td class="fond">Fond + 7</td>
+            </tr>
+            <tr>
+            <td class="oseikomi">Kuzure-gesa-gatame</td>
+                <td class="fond">Fond + entrée</td>
+                <td class="fond">Fond + 2</td>
+                <td class="fond">Fond + 3</td>
+                <td class="fond">Fond + 5</td>
+                <td class="fond">Fond + 7</td>
+            </tr>
+            <tr>
+            <td class="oseikomi">Kami-shiho-gatame</td>
+                <td class="fond">Fond + entrée</td>
+                <td class="fond">Fond + 3</td>
+                <td class="fond">Fond + 3</td>
+                <td class="fond">Fond + 4</td>
+                <td class="fond">Fond + 7</td>
+            </tr>
+            <tr>
+            <td class="oseikomi">Yoko-shiho-gatame</td>
+                <td class="fond">Fond + entrée</td>
+                <td class="fond">Fond + 1</td>
+                <td class="fond">Fond + 2</td>
+                <td class="fond">Fond + 3</td>
+                <td class="fond">Fond + 7</td>
+            </tr>
+            <tr>
+            <td class="oseikomi">Tate-shiho-gatame</td>
+                <td class="fond">Fond + entrée</td>
+                <td class="fond">Fond + 1</td>
+                <td class="fond">Fond + 3</td>
+                <td class="fond">Fond + 4</td>
+                <td class="fond">Fond + 7</td>
+            </tr>
+            <tr>
+            <td class="oseikomi">Kata-gatame</td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 1</td>
+                <td class="fond">Fond + 2</td>
+                <td class="fond">Fond + 3</td>
+                <td class="fond">Fond + 5</td>
+            </tr>
+            <tr>
+            <td class="oseikomi">Kuzure-kami-shiho-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 1</td>
+                <td class="fond">Fond + 3</td>
+                <td class="fond">Fond + 7</td>
+            </tr>
+            <tr bgcolor="#f40808">
+            <th>Entrées au sol</th>
+                <th></th><th></th><th></th>
+                <th></th><th></th>
+            </tr>
+            <tr>
+            <td class="nope">Uke position quadrupédique</td>
+                <td class="fond">2</td>
+                <td class="fond">2</td>
+                <td class="fond">6</td>
+                <td class="fond">6</td>
+                <td class="fond">6</td>
+            </tr>
+            <tr>
+            <td class="nope">Uke couché sur le dos</td>
+                <td class="nope"></td>
+                <td class="fond">2</td>
+                <td class="fond">4</td>
+                <td class="fond">6</td>
+                <td class="fond">6</td>
+            </tr>
+            <tr>
+            <td class="nope">Uke couché sur le ventre</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">2</td>
+                <td class="fond">3</td>
+            </tr>
+            <tr bgcolor="#f40808">
+                <th>Défences au sol</th>
+                <th></th><th></th><th></th>
+                <th></th><th></th>
+            </tr>
+            <tr>
+                <td class="nope">Tori couché sur le dos</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">2</td>
+                <td class="fond">2</td>
+                <td class="fond">4</td>
+            </tr>
+            <tr>
+                <td class="nope">Tori position quadrupédique</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">2</td>
+                <td class="fond">4</td>
+            </tr>
+            <tr bgcolor="#f40808">
+                <th>Dégagement au sol</th>
+                <th></th><th></th><th></th>
+                <th></th><th></th>
+            </tr>
+            <tr>
+                <td class="degagement">Gesa-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+            </tr>
+            <tr>
+                <td class="degagement">Kuzure-gesa-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+            </tr>
+            <tr>
+                <td class="degagement">Kami-shiho-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+            </tr>
+            <tr>
+                <td class="degagement">Yoko-shiho-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+            </tr>
+            <tr>
+                <td class="degagement">Tate-shiho-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">1</td>
+            </tr>
+            <tr>
+                <td class="degagement">Kata-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+            </tr>
+            <tr>
+                <td class="degagement">Kuzure-kami-shiho-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">1</td>
+            </tr>
+            <tr bgcolor="#f40808">
+                <th>Kansetstu-waza</th>
+                <th></th><th></th><th></th>
+                <th></th><th></th>
+            </tr>
+            <tr>
+                <td class="Kansetstu">Ude-garami</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 2</td>
+                <td class="fond">Fond + 4</td>
+            </tr>
+            <tr>
+                <td class="Kansetstu">Ude-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 2</td>
+                <td class="fond">Fond + 4</td>
+            </tr>
+            <tr>
+                <td class="Kansetstu">Juji-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 2</td>
+                <td class="fond">Fond + 4</td>
+            </tr>
+            <tr>
+                <td class="Kansetstu">Hiza-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="Kansetstu">Hara-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="Kansetstu">Waki-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="Kansetstu">Ashi-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+            </tr>
+            <tr>
+                <td class="Kansetstu">Te-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+            </tr>
+            <tr>
+                <td class="Kansetstu">Sanksu-gatame</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+            </tr>
+            <tr bgcolor="#f40808">
+                <th>Shime-waza</th>
+                <th></th><th></th><th></th>
+                <th></th><th></th>
+            </tr>
+            <tr>
+                <td class="shime">Nami-juji-jime</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 2</td>
+                <td class="fond">Fond + 4</td>
+            </tr>
+            <tr>
+                <td class="shime">Gyaku-juji-jime</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 2</td>
+                <td class="fond">Fond + 2</td>
+            </tr>
+            <tr>
+                <td class="shime">Kata-juji-jime</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 2</td>
+                <td class="fond">Fond + 4</td>
+            </tr>
+            <tr>
+                <td class="shime">Hadake-jime</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 2</td>
+                <td class="fond">Fond + 4</td>
+            </tr>
+            <tr>
+                <td class="shime">Okuri-eri-jime</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="shime">Kata-ha-jime</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond + 3</td>
+            </tr>
+            <tr>
+                <td class="shime">Katate-jime</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+            </tr>
+            <tr>
+                <td class="shime">Ryote-jime</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+            </tr>
+            <tr>
+                <td class="shime">Sode-guruma-jime</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+            </tr>
+            <tr>
+                <td class="shime">Tsukkomi-jime</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+            </tr>
+            <tr>
+                <td class="shime">Sankaku-jime</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+            </tr>
+            <tr bgcolor="#f40808">
+                <th>Tachi-waza</th>
+                <th></th><th></th><th></th>
+                <th></th><th></th>
+            </tr>
+            <tr>
+                <td class="nope">O-guruma</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+            </tr>
+            <tr>
+                <td class="nope">Ashi-guruma</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+            </tr>
+            <tr>
+                <td class="nope">Kata-guruma</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+            </tr>
+            <tr>
+                <td class="nope">Te-guruma</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+            </tr>
+            <tr>
+                <td class="nope">Ushiro-gochi</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+            </tr>
+            <tr>
+                <td class="nope">Harai-tsuri-komi-ashi</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+            </tr>
+            <tr>
+                <td class="nope">Soto-makikomi</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+            </tr>
+            <tr>
+                <td class="nope">Hane goshi</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">Fond</td>
+            </tr>
+            <tr bgcolor="#f40808">
+                <th>Nage-no-kata</th>
+                <th></th><th></th><th></th>
+                <th></th><th></th>
+            </tr>
+            <tr>
+                <td class="nope">Te-waza</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+            </tr>
+            <tr>
+                <td class="nope">Koshi-waza</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">1</td>
+                <td class="fond">1</td>
+            </tr>
+            <tr>
+                <td class="nope">Ashi-waza</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="fond">1</td>
+            </tr>
+            <tr>
+                <td class="nope">Sutemi-waza</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+            </tr>
+            <tr>
+                <td class="nope">Yoko-sutemi-waza</td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+                <td class="nope"></td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>  

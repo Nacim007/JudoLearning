@@ -435,15 +435,19 @@ margin: 0 5px 0 5px;
 /* --------------------------------------------------------------- */
 /* ------------------------ Table  ------------------------------- */
 /* --------------------------------------------------------------- */
-
 table {
-    /* border-collapse: collapse; */
+    margin-top: 20px;
     font-size: 1em;
     width: 80vw;
-    background-color: #050505;
-    margin: 0;
-    margin-top: 5px;
-    }
+    background-color: black;
+}
+
+
+.headtitle{
+    background-color:white;
+    font-size: 1em;
+}
+
 
 .center{
     text-align: center;
@@ -451,20 +455,8 @@ table {
     margin-left: auto;
 }    
 
-td:hover {background-color: coral;}
+/* td:hover {background-color: coral;} */ 
     
-.titre {
-    background-color: #fdfdfd;
-    padding: 8px;
-    text-align: center;
-}
-
-.separation{
-    background-color: #f40808;
-    padding: 8px;
-    text-align: center;
-}
-
 .fond{
     background-color: #ffff04;
     padding: 5px;
@@ -511,7 +503,6 @@ td:hover {background-color: coral;}
     background-color: #16ad2f;
     padding: 5px;
     text-align: center;
-}
-
+} 
 
 
