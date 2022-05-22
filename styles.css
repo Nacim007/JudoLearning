@@ -216,24 +216,27 @@ hr {
 }
 
 #myInput{
-    padding: 10px;
+    padding: 5px;
     border-radius: 50px;
     text-align: center;
-    font-size: 1.1em;
-    color: black;
+    font-size: 1em;
+    position: fixed;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -100px;
   }
 
-input[type=text] {
-    width: 20%;
+/* input[type=text] {
+    width: 30%;
     -webkit-transition: width 0.15s ease-in-out;
     transition: width 0.15s ease-in-out;
 }
 
 /* When the input field gets focus,
     change its width to 100% */
-input[type=text]:focus {
+/* input[type=text]:focus {
     width: 50%;
-}
+} */ */
 
 #myTable{
     font-size:  1.5em;
@@ -439,6 +442,7 @@ table {
     width: 80vw;
     background-color: #050505;
     margin: 0;
+    margin-top: 40px;
     }
 
 .center{
