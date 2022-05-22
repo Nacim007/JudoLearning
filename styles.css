@@ -206,7 +206,43 @@ padding: 0;
     columns: 2 auto;
   }
 
-  
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 3px;
+}
+
+#myInput{
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.1em;
+    color: black;
+  }
+
+input[type=text] {
+    width: 20%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+    change its width to 100% */
+input[type=text]:focus {
+    width: 50%;
+}
+
+#myTable{
+    font-size:  1.5em;
+}
+
+.techniques{
+    display: list-item;    
+} 
+
 
 /* --------------------------------------------------------------- */
 /* -------------------------- Footer ----------------------------- */
@@ -400,10 +436,16 @@ margin: 0 5px 0 5px;
 table {
     /* border-collapse: collapse; */
     font-size: 1em;
-    width: 100vw;
+    width: 80vw;
     background-color: #050505;
     margin: 0;
     }
+
+.center{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}    
 
 td:hover {background-color: coral;}
     

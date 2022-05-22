@@ -17,9 +17,16 @@
           </nav>
           <!-- <a class="cta" href="#"><button>Contact</button></a> -->
         </header>
-        <h1 class="band-name">Tableau</h1>
+        <hr>
+        <h1 class="band-name">Tableau Général</h1>
+        <hr>
         <!-- TODO: Find a suitable backgorund-->
-        <table>
+        <!-- linking javascript -->
+        <script src="./recherche.js"></script>
+            <!-- input tag -->
+        <input id="myInput" onkeyup="search_tech()" type="text"
+        name="search" placeholder="Recherche...">
+        <table id="myTable" class="center">
           <thead class="titre">
             <tr>
               <th></th>
@@ -36,7 +43,7 @@
             <th></th><th></th>
           </tr>
           <tr>
-            <td class="tachiwaza">O-soto-gari</td>
+          <td class="tachiwaza">O-soto-gari</td>
             <td class="fond">Fond</td>
             <td class="fond">Fond + 1</td>
             <td class="fond">Fond + 2</td>
@@ -44,7 +51,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Uki-goshi</td>
+          <td class="tachiwaza">Uki-goshi</td>
             <td class="fond">Fond</td>
             <td class="fond">Fond + 1</td>
             <td class="fond">Fond + 2</td>
@@ -52,7 +59,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Hiza-guruma</td>
+          <td class="tachiwaza">Hiza-guruma</td>
             <td class="fond">Fond</td>
             <td class="fond">Fond + 1</td>
             <td class="fond">Fond + 2</td>
@@ -60,7 +67,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Sasae-tsuri-komi-ashi</td>
+          <td class="tachiwaza">Sasae-tsuri-komi-ashi</td>
             <td class="fond">Fond</td>
             <td class="fond">Fond + 1</td>
             <td class="fond">Fond + 2</td>
@@ -68,7 +75,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Seoi-nage</td>
+          <td class="tachiwaza">Seoi-nage</td>
             <td class="fond">Fond</td>
             <td class="fond">Fond</td>
             <td class="fond">Fond + 2</td>
@@ -76,7 +83,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">O-uchi-gari</td>
+          <td class="tachiwaza">O-uchi-gari</td>
             <td class="nope"></td>
             <td class="fond">Fond</td>
             <td class="fond">Fond + 2</td>
@@ -84,7 +91,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">O-goshi</td>
+          <td class="tachiwaza">O-goshi</td>
             <td class="nope"></td>
             <td class="fond">Fond</td>
             <td class="fond">Fond + 1</td>
@@ -92,7 +99,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">De-ashi-barai</td>
+          <td class="tachiwaza">De-ashi-barai</td>
             <td class="nope"></td>
             <td class="fond">Fond</td>
             <td class="fond">Fond + 1</td>
@@ -100,7 +107,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Koshi-guruma</td>
+          <td class="tachiwaza">Koshi-guruma</td>
             <td class="nope"></td>
             <td class="nope"></td>
             <td class="fond">Fond</td>
@@ -108,7 +115,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Harai-goshi</td>
+          <td class="tachiwaza">Harai-goshi</td>
             <td class="nope"></td>
             <td class="nope"></td>
             <td class="fond">Fond</td>
@@ -116,7 +123,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Ko-soto-gari</td>
+          <td class="tachiwaza">Ko-soto-gari</td>
             <td class="nope"></td>
             <td class="nope"></td>
             <td class="fond">Fond</td>
@@ -124,7 +131,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Ko-uchi-gari</td>
+          <td class="tachiwaza">Ko-uchi-gari</td>
             <td class="nope"></td>
             <td class="nope"></td>
             <td class="fond">Fond</td>
@@ -132,7 +139,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Tai-otoshi</td>
+          <td class="tachiwaza">Tai-otoshi</td>
             <td class="nope"></td>
             <td class="nope"></td>
             <td class="fond">Fond</td>
@@ -140,7 +147,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Uchi-mata</td>
+          <td class="tachiwaza">Uchi-mata</td>
             <td class="nope"></td>
             <td class="nope"></td>
             <td class="fond">Fond</td>
@@ -148,7 +155,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Tsuri-komi-goshi</td>
+          <td class="tachiwaza">Tsuri-komi-goshi</td>
             <td class="nope"></td>
             <td class="nope"></td>
             <td class="nope"></td>
@@ -156,7 +163,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Tomoe-nage</td>
+          <td class="tachiwaza">Tomoe-nage</td>
             <td class="nope"></td>
             <td class="nope"></td>
             <td class="nope"></td>
@@ -164,7 +171,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="tachiwaza">Okuri-ashi-barai</td>
+          <td class="tachiwaza">Okuri-ashi-barai</td>
             <td class="nope"></td>
             <td class="nope"></td>
             <td class="nope"></td>
@@ -172,7 +179,7 @@
             <td class="fond">Fond + 3</td>
           </tr>
           <tr>
-            <td class="nope">Uchi komi</td>
+          <td class="nope">Uchi komi</td>
             <td class="fond">1</td>
             <td class="fond">1</td>
             <td class="fond">1</td>
@@ -180,12 +187,12 @@
             <td class="fond">1</td>
           </tr>
           <tr class="separation">
-            <th>Ukemi</th>
+          <th>Ukemi</th>
             <th></th><th></th><th></th>
             <th></th><th></th>
           </tr>
           <tr>
-            <td class="ukemi"> Ushiro Ukemi </td>
+          <td class="ukemi"> Ushiro Ukemi </td>
             <td class="fond">1</td>
             <td class="fond">1</td>
             <td class="fond">1</td>
@@ -193,7 +200,7 @@
             <td class="fond">1</td>
           </tr>
           <tr>
-            <td class="ukemi"> Yoko Ukemi </td>
+          <td class="ukemi"> Yoko Ukemi </td>
             <td class="fond">G&D</td>
             <td class="fond">G&D</td>
             <td class="fond">G&D</td>
@@ -201,7 +208,7 @@
             <td class="fond">G&D</td>
           </tr>
           <tr>
-            <td class="ukemi"> Mae Ukemi </td>
+          <td class="ukemi"> Mae Ukemi </td>
             <td class="fond">G&D</td>
             <td class="fond">G&D</td>
             <td class="fond">G&D</td>
@@ -209,12 +216,12 @@
             <td class="fond">G&D</td>
           </tr>
           <tr class="separation">
-            <th>Osei-komi-waza</th>
+          <th>Osei-komi-waza</th>
             <th></th><th></th><th></th>
             <th></th><th></th>
           </tr>
           <tr>
-            <td class="oseikomi">Gesa-gatame</td>
+          <td class="oseikomi">Gesa-gatame</td>
             <td class="fond">Fond + entrée</td>
             <td class="fond">Fond + 2</td>
             <td class="fond">Fond + 3</td>
@@ -222,7 +229,7 @@
             <td class="fond">Fond + 7</td>
           </tr>
           <tr>
-            <td class="oseikomi">Kuzure-gesa-gatame</td>
+          <td class="oseikomi">Kuzure-gesa-gatame</td>
             <td class="fond">Fond + entrée</td>
             <td class="fond">Fond + 2</td>
             <td class="fond">Fond + 3</td>
@@ -230,7 +237,7 @@
             <td class="fond">Fond + 7</td>
           </tr>
           <tr>
-            <td class="oseikomi">Kami-shiho-gatame</td>
+          <td class="oseikomi">Kami-shiho-gatame</td>
             <td class="fond">Fond + entrée</td>
             <td class="fond">Fond + 3</td>
             <td class="fond">Fond + 3</td>
@@ -238,7 +245,7 @@
             <td class="fond">Fond + 7</td>
           </tr>
           <tr>
-            <td class="oseikomi">Yoko-shiho-gatame</td>
+          <td class="oseikomi">Yoko-shiho-gatame</td>
             <td class="fond">Fond + entrée</td>
             <td class="fond">Fond + 1</td>
             <td class="fond">Fond + 2</td>
@@ -246,7 +253,7 @@
             <td class="fond">Fond + 7</td>
           </tr>
           <tr>
-            <td class="oseikomi">Tate-shiho-gatame</td>
+          <td class="oseikomi">Tate-shiho-gatame</td>
             <td class="fond">Fond + entrée</td>
             <td class="fond">Fond + 1</td>
             <td class="fond">Fond + 3</td>
@@ -254,7 +261,7 @@
             <td class="fond">Fond + 7</td>
           </tr>
           <tr>
-            <td class="oseikomi">Kata-gatame</td>
+          <td class="oseikomi">Kata-gatame</td>
             <td class="nope"></td>
             <td class="fond">Fond + 1</td>
             <td class="fond">Fond + 2</td>
@@ -262,7 +269,7 @@
             <td class="fond">Fond + 5</td>
           </tr>
           <tr>
-            <td class="oseikomi">Kuzure-kami-shiho-gatame</td>
+          <td class="oseikomi">Kuzure-kami-shiho-gatame</td>
             <td class="nope"></td>
             <td class="nope"></td>
             <td class="fond">Fond + 1</td>
@@ -270,12 +277,12 @@
             <td class="fond">Fond + 7</td>
           </tr>
           <tr class="separation">
-            <th>Entrées au sol</th>
+          <th>Entrées au sol</th>
             <th></th><th></th><th></th>
             <th></th><th></th>
           </tr>
           <tr>
-            <td class="nope">Uke position quadrupédique</td>
+          <td class="nope">Uke position quadrupédique</td>
             <td class="fond">2</td>
             <td class="fond">2</td>
             <td class="fond">6</td>
@@ -283,7 +290,7 @@
             <td class="fond">6</td>
           </tr>
           <tr>
-            <td class="nope">Uke couché sur le dos</td>
+          <td class="nope">Uke couché sur le dos</td>
             <td class="nope"></td>
             <td class="fond">2</td>
             <td class="fond">4</td>
@@ -291,7 +298,7 @@
             <td class="fond">6</td>
           </tr>
           <tr>
-            <td class="nope">Uke couché sur le ventre</td>
+          <td class="nope">Uke couché sur le ventre</td>
             <td class="nope"></td>
             <td class="nope"></td>
             <td class="nope"></td>
