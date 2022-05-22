@@ -226,20 +226,8 @@ hr {
     margin-left: -100px;
   }
 
-/* input[type=text] {
-    width: 30%;
-    -webkit-transition: width 0.15s ease-in-out;
-    transition: width 0.15s ease-in-out;
-}
-
-/* When the input field gets focus,
-    change its width to 100% */
-/* input[type=text]:focus {
-    width: 50%;
-} */ */
-
 #myTable{
-    font-size:  1.5em;
+    font-size:  1em;
 }
 
 .techniques{
@@ -436,18 +424,24 @@ margin: 0 5px 0 5px;
 /* ------------------------ Table  ------------------------------- */
 /* --------------------------------------------------------------- */
 table {
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 1em;
     width: 80vw;
     background-color: black;
 }
 
 
+.table-wrapper
+{
+    height: 65vh;
+    overflow: auto;
+} 
+
+
 .headtitle{
     background-color:white;
     font-size: 1em;
 }
-
 
 .center{
     text-align: center;
@@ -506,10 +500,7 @@ table {
 } 
 
 
-/* ------------------------------------ */
-.table-wrapper
-{
-    height: 65vh;
-    overflow: auto;
-}
+/* --------------------------------------------------------------- */
+/* -------------------------- Footer ----------------------------- */
+/* --------------------------------------------------------------- */
 
