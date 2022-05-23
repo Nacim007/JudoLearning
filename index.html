@@ -5,48 +5,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body class="main-header">
-        <header> 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="PassageGrade.html">Grades</a></li>
-                    <li><a href="tableau.html" >Tableau</a></li>
-                </ul>
-            </nav>
-            <h1 class="band-name band-name-large ">Accueil</h1>
-            <!-- TODO: Find a suitable backgorund-->
+    <body class="body">
+      <header>
+          <!-- <img src="C:/Users/nacim/OneDrive/Desktop/judoLogo.png" alt="logo" class="logo"> -->
+          <nav>
+              <ul class="nav__links">
+                  <!-- <li><a href="index.html">Accueil</a></li> -->
+                  <li><a href="index.html">Grades</a></li>
+                  <li><a href="tableau.html">Tableau</a></li>
+              </ul>
+          </nav>
+          <!-- <a class="cta" href="#"><button>Contact</button></a> -->
         </header>
-
+        <hr>
+        <h1 class="band-name">Grades</h1>
+        <hr>
+        <!-- TODO: Find a suitable backgorund-->
         <div class="slider-container">
             <div class="slider">
               <div class="slides">
                 <div id="slides__1" class="slide">
-                  <span class="slide__text">Historique du Judo</span>
+                  <div class="slide__text">
+                    <h1 class="band-name-small">Ceinture Jaune</h1>
+                    <button class="y-button"><a href="jaune/TW-jaune.html" style="text-decoration:none;color:black;">Tachi Waza</a></button>
+                    <button class="y-button"><a href="jaune/NW-jaune.html" style="text-decoration:none;color:black;">Ne Waza</a></button>
+                  </div>
                   <a class="slide__prev" href="#slides__4" title="Next"></a>
                   <a class="slide__next" href="#slides__2" title="Next"></a>
                 </div>
                 <div id="slides__2" class="slide">
-                  <span class="slide__text">Le Kimono</span>
+                  <div class="slide__text">
+                    <h1 class="band-name-small">Ceinture Verte</h1>
+                    <button class="disabled g-button"><a style="text-decoration:none;color:black;">Tachi Waza</a></button>
+                    <button class="disabled g-button"><a style="text-decoration:none;color:black;">Ne Waza</a></button>
+                  </div>
                   <a class="slide__prev" href="#slides__1" title="Prev"></a>
                   <a class="slide__next" href="#slides__3" title="Next"></a>
                 </div>
                 <div id="slides__3" class="slide">
-                  <span class="slide__text">Le Dojo</span>
+                  <div class="slide__text">
+                    <h1 class="band-name-small">Ceinture Bleu</h1>
+                    <button class="disabled b-button"><a style="text-decoration:none;color:black;">Tachi Waza</a></button>
+                    <button class="disabled b-button"><a style="text-decoration:none;color:black;">Ne Waza</a></button>
+                  </div>
                   <a class="slide__prev" href="#slides__2" title="Prev"></a>
                   <a class="slide__next" href="#slides__4" title="Next"></a>
                 </div>
                 <div id="slides__4" class="slide">
-                  <span class="slide__text">Le Salut</span>
+                  <div class="slide__text">
+                    <h1 class="band-name-small">Ceinture Marron</h1>
+                    <button class="disabled br-button"><a style="text-decoration:none;color:black;">Tachi Waza</a></button>
+                    <button class="disabled br-button"><a style="text-decoration:none;color:black;">Ne Waza</a></button>
+                  </div>
                   <a class="slide__prev" href="#slides__3" title="Prev"></a>
                   <a class="slide__next" href="#slides__1" title="Prev"></a>
                 </div>
               </div>
               <div class="slider__nav">
-                <a class="slider__navlink" href="#slides__1"></a>
-                <a class="slider__navlink" href="#slides__2"></a>
-                <a class="slider__navlink" href="#slides__3"></a>
-                <a class="slider__navlink" href="#slides__4"></a>
+                <a class="slider__navlinkJaune" href="#slides__1"></a>
+                <a class="slider__navlinkVert" href="#slides__2"></a>
+                <a class="slider__navlinkBleu" href="#slides__3"></a>
+                <a class="slider__navlinkMarron" href="#slides__4"></a>
               </div>
             </div>
           </div>
