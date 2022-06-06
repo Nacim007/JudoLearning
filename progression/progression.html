@@ -49,12 +49,16 @@
                     </select>
                   </td>
                   <td>
-                    <textarea rows="5" style="width:65%" ></textarea>
+                    <div class="grow-wrap">
+                        <textarea name="text" id="text" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
+                      </div>
                   </td>
                   <td>
-                    <textarea rows="5" style="width:65%" ></textarea>
+                    <div class="grow-wrap">
+                        <textarea name="text" id="text" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
+                      </div>
                   </td>
-                  <td>
+                  <td class="headtitle">
                     <div class="action_container">
                       <button class="danger" onclick="remove_tr(this)">
                         <i class="fa fa-close"></i>
