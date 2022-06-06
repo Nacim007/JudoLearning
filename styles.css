@@ -12,33 +12,17 @@ html, body{
 /* --------------------------------------------------------------- */
 /* --------------------- Header and navigation bar --------------- */
 /* --------------------------------------------------------------- */
-header{
-    background: linear-gradient(
-    90deg,
-    #304352 0%,
-    #d7d2cc 100%);
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center; 
-}
-
-li{
-    height: 100%;
-    display: flex;
-    font-size: 25px;
-    text-decoration: none;
-}
-
 .nav__links{
     list-style: none;
     justify-content: space-between;
+    text-align:center;
+    
 }  
 
 .nav__links li{
     display: inline-block;
-    text-align: center;
-    margin-left: auto;
-    padding: 0px 10px;
+    height: 100%;
+    text-decoration: none;
 }  
 
 
@@ -49,66 +33,9 @@ a{
     text-decoration: none;
     font-weight: 1000;
     font-size: 20px;
-    padding: 10px 10px;
+    padding: 5px 5px;
  }
  
-
-/* --------------------------------------------------------------- */
-/* -------------------------- Page style ------------------------- */
-/* --------------------------------------------------------------- */ 
-
-.page-container{
-    position: relative;
-    min-height: 100vh;
-    height: auto;
-}
-
-.content-wrap{
-    padding-bottom: 20px;
-    padding-left: 0;
-}
-
-.row {
-    display: flex; 
-    }
-
-.column {
-flex: 50%;
-padding: 0;
-}
-
-.content-box {
-    columns: 2 auto;
-  }
-
-hr {
-    border: none;
-    border-top: 3px double #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 3px;
-}
-
-#myInput{
-    padding: 5px;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 1em;
-    position: relative;
-    left: 50%;
-    margin-top: -5px;
-    margin-left: -100px;
-  }
-
-#myTable{
-    font-size:  1em;
-}
-
-.techniques{
-    display: list-item;    
-} 
-
 
 /* --------------------------------------------------------------- */
 /* -------------------------- Footer ----------------------------- */
@@ -289,7 +216,7 @@ margin: 0 5px 0 5px;
     }
 
 
-    /* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
 /* ------------------ Button for each belt  ---------------------- */
 /* --------------------------------------------------------------- */
 .y-button{
@@ -331,88 +258,4 @@ margin: 0 5px 0 5px;
     display: inline-block;
 }
 
-
-/* --------------------------------------------------------------- */
-/* ------------------------ Table  ------------------------------- */
-/* --------------------------------------------------------------- */
-table {
-    margin-top: 0px;
-    font-size: 1em;
-    width: 80vw;
-    background-color: black;
-}
-
-
-.table-wrapper
-{
-    height: 65vh;
-    overflow: auto;
-} 
-
-
-.headtitle{
-    background-color:white;
-    font-size: 1em;
-}
-
-.center{
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-}    
-
-/* td:hover {background-color: coral;} */ 
-    
-.fond{
-    background-color: #ffff04;
-    padding: 5px;
-    text-align: center;
-}
-
-.nope{
-    background-color: #ffffff;
-    padding: 5px;
-    text-align: center;
-}
-
-.tachiwaza{
-    background-color: #2888e8;
-    padding: 5px;
-    text-align: center;
-}
-
-.ukemi{
-    background-color: #047316;
-    padding: 5px;
-    text-align: center;
-}
-
-.oseikomi{
-    background-color: #c26610;
-    padding: 5px;
-    text-align: center;
-}
-
-.degagement{
-    background-color: #008b25;
-    padding: 5px;
-    text-align: center;
-}
-
-.Kansetstu{
-    background-color: #4dccf2;
-    padding: 5px;
-    text-align: center;
-}
-
-.shime{
-    background-color: #16ad2f;
-    padding: 5px;
-    text-align: center;
-} 
-
-
-/* --------------------------------------------------------------- */
-/* -------------------------- slider ----------------------------- */
-/* --------------------------------------------------------------- */
 
